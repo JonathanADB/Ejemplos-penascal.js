@@ -31,18 +31,20 @@ main{display: flex;
       background-image: url(/recursos/matrix.jpg);
       color: black;
     }
-.joni{height: 5rem;
+
+.joni{
        justify-content: center;
        align-items: center;
        display: flex;
        height: 60rem;
        color: white;
-       font-size: 10rem;
+       font-size: 5rem;
       }
 .joni div{justify-content:center;
            align-items: center;
            text-align: center;
           }
+
 .contenedor{width: 50%;
            justify-content: center;
            display: flex;
