@@ -1,0 +1,134 @@
+/* General */
+* a{text-decoration: none;
+    color: black;}
+  ul{list-style: none;}
+/* específico */ 
+/* nav */
+nav{width: 100%;
+    background-color: black;
+    height: 4rem;
+   }
+.menu{width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+   }
+.menu ul{width: 60%;
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+        }
+li{background-color: white;
+   color: black;
+   padding: 0.5rem;
+   border-radius: 0.5rem;
+  }
+/* main */
+main{display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url(/recursos/matrix.jpg);
+      color: black;
+    }
+.joni{height: 5rem;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       height: 60rem;
+       color: white;
+       font-size: 10rem;
+      }
+.joni div{justify-content:center;
+           align-items: center;
+           text-align: center;
+          }
+.contenedor{width: 50%;
+           justify-content: center;
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+           border: 0.5rem solid red;
+           box-shadow: 0,5rem blue;
+           margin-top: 3rem;
+           margin-bottom: 3rem;
+           background-color: white;
+          }
+
+/*Crea un contenedor relativo para el video, 
+con una altura del 100% de la ventana gráfica (100vh)
+ y oculta el desbordamiento para que no haya barras de desplazamiento.*/
+.video-container {
+   position: relative;
+   height: 100vh;
+   overflow: hidden;
+}
+/*Posiciona el video absolutamente en la esquina superior izquierda
+ y ajusta su tamaño para cubrir todo el contenedor 
+ (100% de ancho y alto). object-fit: cover;
+  garantiza que el video se ajuste correctamente sin distorsión.*/
+#background-video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+/*overlay: Crea una capa superpuesta absoluta 
+con un fondo negro semitransparente (rgba(0, 0, 0, 0.5)). 
+display: flex; justify-content: center; align-items: center;
+ se utiliza para centrar vertical 
+ y horizontalmente el contenido de la capa.*/
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad del fondo negro */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.text {
+   text-align: center;
+   color:red; /* Color del texto */
+}
+
+.text h1 {
+   margin: 0;
+   font-size: 4rem; /* Tamaño del texto */
+}
+
+/*main de la pagina de bucle_2*/
+
+.elemento {
+   border: 1px solid #ccc;
+   margin: 10px;
+   padding: 10px;
+}
+/*css ejemplo do while*/
+
+#output {
+   margin-top: 20px;
+}
+/* Footer */
+footer{background-color: black;
+       display: flex;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+       margin-top: 0;
+      }
+       
+.parte_1{color:white;
+         /*background-color: white;*/
+         justify-content: center;
+         align-items: center;
+         width: 50%;
+         padding: 0.1rem;
+         text-align: center;
+         height: 4rem;
+        }

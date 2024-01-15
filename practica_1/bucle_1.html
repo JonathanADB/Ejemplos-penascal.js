@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_ana.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <ul>
+                <li><a href="/index.html">INICIO</a></li>
+                <li><a href="#">VARIABLES</a></li>
+                <li><a href="#">OPERADORES</a></li>
+                <li><a href="/bucle_1.html">BUCLES_1</a></li>
+                <li><a href="/bucle.html">BUCLES_2</a></li>
+                <li><a href="/json.html">JSON</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <main>
+        <!---<div class="main_video">
+            <video src="/recursos/The Matrix Raining Green Code Backdrop for OBS - Teams, Zoom calls in 4k.mp4" autoplay loop></video> </video>
+        </div>--->
+        <!---Ana-->
+
+      <div class="bucle">
+        <div class="titulobucle">
+          <h2>BUCLE__FOR</h2>
+        </div>
+
+        <div>
+          <div class="exemplos">
+            <h5>for</h5>
+            
+
+            <p id="demo"></p>
+
+            <script>
+              let text = "";
+
+              for (let i = 0; i < 5; i++) {
+              text += "numero " + i + "<br>";
+              }
+
+              document.getElementById("demo").innerHTML = text;
+            </script>
+
+          </div>
+
+          <div class="exemplos">
+            <h5>for...in</h5>
+            <p>para iterar sobre claves de objeto</p>
+
+            <script>
+              const persona = { nombre: 'Ainhoa', edad: 30, ciudad: 'Bilbao' };
+              for (let propiedad in persona) {
+                document.write(propiedad + ': ' + persona[propiedad] + '<br>');
+              }
+            </script>
+          </div>
+
+          <div class="exemplos">
+            <h5>for...in</h5>
+            <p>para iterar sobre índices de array</p>
+            <p id="resultado"></p>
+
+            <script>
+              // Array de colores
+              const colores = ['rojo', 'verde', 'azul'];
+
+              // Elemento HTML donde mostraremos los resultados
+              const resultadoElemento = document.getElementById('resultado');
+
+              // Iterar sobre índices usando for...in
+              for (let indice in colores) {
+                if (colores.hasOwnProperty(indice)) {
+                  resultadoElemento.innerHTML += `Índice: ${indice}, Valor: ${colores[indice]}<br>`;
+                }
+              }
+            </script>
+            <p>
+              Nota: Generalmente no se recomienda el uso 
+              de for...in con array debido
+              a posibles problemas con las propiedades 
+              heredadas y el orden de iteración.
+            </p>
+          </div>
+
+          <div class="exemplos">
+            <h5>for...of</h5>
+            <p>para iterar sobre elementos de array</p>
+            <ul id="lista-frutas"></ul>
+
+            <script>
+              // Array de frutas
+              const frutas = ['manzana', 'banana', 'uva', 'naranja'];
+            
+              // Elemento HTML (lista) donde mostraremos los resultados
+              const listaFrutasElemento = document.getElementById('lista-frutas');
+            
+              // Iterar sobre elementos usando for...of
+              for (let fruta of frutas) {
+                // Crear un nuevo elemento de lista y agregarlo a la lista
+                const nuevoElementoLista = document.createElement('li');
+                nuevoElementoLista.textContent = fruta;
+                listaFrutasElemento.appendChild(nuevoElementoLista);
+              }
+            </script>
+          </div>
+
+          <div class="exemplos">
+            <h5>for..of</h5>
+            <p>para iterar sobre un string</p>
+
+            <p id="demo"></p>
+
+            <script>
+            let language = "JavaScript";
+
+            let text = "";
+            for (let x of language) {
+              text += x + "<br>";
+            }
+
+            document.getElementById("demo").innerHTML = text;
+            </script>
+            
+            
+          </div>
+          <div class="exemplos">
+            <p class="conclucion">
+              Cada tipo de bucle tiene su caso de uso. El bucle for tradicional
+             es versátil y puede manejar varios escenarios de bucle. 
+             for...in está diseñado específicamente para iterar sobre 
+             propiedades de objetos, 
+            mientras que for...of es ideal para iterar sobre objetos 
+            iterables como arrays y strings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class="parte_1">
+            <h3>INFORMACIÓN DE JAVASCRIPT</h3>
+        </div>
+        <div class="parte_1">
+            <h4>EQUIPO B</h4>
+        </div>
+    </footer>
+</body>
+</html>
