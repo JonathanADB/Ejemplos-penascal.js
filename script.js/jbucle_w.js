@@ -1,7 +1,7 @@
 "use strict"
 console.log("hola");
 
-console.log("-------while--------");
+/*console.log("-------while--------");
 //while
 
 let contador = 0;
@@ -41,4 +41,4 @@ for (let i = 0; i < 10; i++) {
   console.log("Contador: " + i);
 }
 // La salida será: 0, 1, 2, 3, 4, 6, 7, 8, 9
-          
+          */
